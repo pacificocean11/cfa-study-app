@@ -1,0 +1,114 @@
+.dashboard {
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.page-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  color: #fff;
+}
+
+.section-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 32px 0 16px;
+  color: #ccc;
+}
+
+.loading {
+  text-align: center;
+  padding: 60px;
+  color: #888;
+  font-size: 18px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  margin-bottom: 8px;
+}
+
+.stat-card {
+  background: #1a1a3e;
+  border: 1px solid #2a2a5e;
+  border-radius: 12px;
+  padding: 24px;
+  text-align: center;
+}
+
+.stat-icon {
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+.stat-value {
+  font-size: 36px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.stat-label {
+  font-size: 14px;
+  color: #888;
+  margin-top: 4px;
+}
+
+.topic-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 16px;
+}
+
+.topic-card {
+  border-left: 4px solid #6c63ff;
+}
+
+.topic-header {
+  margin-bottom: 12px;
+}
+
+.topic-name {
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 4px;
+}
+
+.topic-counts {
+  font-size: 13px;
+  color: #888;
+}
+
+.dot {
+  margin: 0 6px;
+}
+
+.topic-progress {
+  margin-top: 8px;
+}
+
+.progress-bar {
+  height: 6px;
+  background: #2a2a5e;
+  border-radius: 3px;
+  overflow: hidden;
+  margin-bottom: 4px;
+}
+
+.progress-fill {
+  height: 100%;
+  border-radius: 3px;
+  transition: width 0.5s ease;
+}
+
+.progress-text {
+  font-size: 12px;
+  color: #888;
+}

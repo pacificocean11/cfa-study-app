@@ -1,0 +1,145 @@
+.flashcards {
+  animation: fadeIn 0.3s ease;
+}
+
+.filters {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.topic-select {
+  background: #1a1a3e;
+  color: #e0e0e0;
+  border: 1px solid #2a2a5e;
+  border-radius: 8px;
+  padding: 10px 16px;
+  font-size: 14px;
+  outline: none;
+  cursor: pointer;
+  min-width: 250px;
+}
+
+.topic-select:focus {
+  border-color: #6c63ff;
+}
+
+.card-counter {
+  font-size: 14px;
+  color: #888;
+}
+
+.flashcard-container {
+  perspective: 1000px;
+  cursor: pointer;
+  margin-bottom: 24px;
+}
+
+.flashcard {
+  position: relative;
+  width: 100%;
+  min-height: 300px;
+  transition: transform 0.5s ease;
+  transform-style: preserve-3d;
+}
+
+.flashcard.flipped {
+  transform: rotateX(180deg);
+}
+
+.flashcard-front, .flashcard-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 300px;
+  backface-visibility: hidden;
+  background: #1a1a3e;
+  border: 1px solid #2a2a5e;
+  border-radius: 16px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.flashcard-back {
+  transform: rotateX(180deg);
+}
+
+.card-difficulty {
+  align-self: flex-start;
+  margin-bottom: 16px;
+}
+
+.card-question {
+  font-size: 22px;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+  line-height: 1.4;
+}
+
+.card-answer {
+  font-size: 20px;
+  color: #6c63ff;
+  text-align: center;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.flip-hint {
+  margin-top: 24px;
+  font-size: 13px;
+  color: #555;
+}
+
+.confidence-buttons {
+  text-align: center;
+  animation: fadeIn 0.3s ease;
+}
+
+.confidence-label {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 12px;
+}
+
+.confidence-row {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.confidence-btn {
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.level-1 { background: #e74c3c; color: white; }
+.level-2 { background: #e67e22; color: white; }
+.level-3 { background: #f39c12; color: white; }
+.level-4 { background: #2ecc71; color: white; }
+.level-5 { background: #27ae60; color: white; }
+
+.confidence-btn:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 60px 20px;
+  color: #888;
+}
+
+.empty-state p {
+  font-size: 18px;
+  margin-bottom: 16px;
+}
