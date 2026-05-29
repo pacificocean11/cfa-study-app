@@ -18,26 +18,26 @@ export default function Dashboard({ topics }) {
 
   return (
     <div className="dashboard">
-      <h1 className="page-title">CFA Level Study Dashboard</h1>
+      <h1 className="page-title">Dashboard</h1>
 
       <div className="stats-grid">
         <div className="stat-card">
-          <div className="stat-icon">🃏</div>
+          <span className="material-symbols-outlined stat-icon">style</span>
           <div className="stat-value">{overview.totalFlashcards}</div>
           <div className="stat-label">Flashcards</div>
         </div>
         <div className="stat-card">
-          <div className="stat-icon">📝</div>
+          <span className="material-symbols-outlined stat-icon">quiz</span>
           <div className="stat-value">{overview.totalQuestions}</div>
           <div className="stat-label">Practice Questions</div>
         </div>
         <div className="stat-card">
-          <div className="stat-icon">✅</div>
+          <span className="material-symbols-outlined stat-icon">check_circle</span>
           <div className="stat-value">{overview.reviewedCards}</div>
           <div className="stat-label">Cards Reviewed</div>
         </div>
         <div className="stat-card">
-          <div className="stat-icon">📊</div>
+          <span className="material-symbols-outlined stat-icon">analytics</span>
           <div className="stat-value">{overview.quizStats.percentage}%</div>
           <div className="stat-label">Quiz Accuracy</div>
         </div>

@@ -1,6 +1,6 @@
 .navbar {
-  background: #1a1a3e;
-  border-bottom: 1px solid #2a2a5e;
+  background: var(--card-bg);
+  border-bottom: 1px solid var(--border-color);
   padding: 0 24px;
   position: sticky;
   top: 0;
@@ -25,12 +25,13 @@
 
 .brand-icon {
   font-size: 24px;
+  color: var(--accent-pink);
 }
 
 .brand-text {
   font-size: 18px;
   font-weight: 700;
-  color: #6c63ff;
+  color: var(--accent-pink);
 }
 
 .nav-links {
@@ -45,18 +46,18 @@
   padding: 8px 16px;
   border-radius: 8px;
   background: transparent;
-  color: #888;
+  color: var(--text-secondary);
   font-size: 14px;
   transition: all 0.2s;
 }
 
 .nav-link:hover {
-  background: #2a2a5e;
-  color: #e0e0e0;
+  background: rgba(190, 0, 85, 0.1);
+  color: var(--text-primary);
 }
 
 .nav-link.active {
-  background: #6c63ff;
+  background: var(--accent-pink);
   color: white;
 }
 

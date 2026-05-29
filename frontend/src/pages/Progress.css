@@ -16,8 +16,8 @@
 }
 
 .breakdown-item {
-  background: #1a1a3e;
-  border: 1px solid #2a2a5e;
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
   border-radius: 10px;
   padding: 16px;
 }
@@ -32,18 +32,18 @@
 .breakdown-name {
   font-size: 14px;
   font-weight: 600;
-  color: #e0e0e0;
+  color: var(--text-primary);
 }
 
 .breakdown-pct {
   font-size: 18px;
   font-weight: 700;
-  color: #fff;
+  color: var(--text-primary);
 }
 
 .breakdown-bar-bg {
   height: 8px;
-  background: #2a2a5e;
+  background: var(--border-color);
   border-radius: 4px;
   overflow: hidden;
   margin-bottom: 8px;
@@ -59,7 +59,7 @@
   display: flex;
   justify-content: space-between;
   font-size: 12px;
-  color: #666;
+  color: var(--text-secondary);
 }
 
 .attempts-list {
@@ -83,17 +83,18 @@
 .attempt-correct {
   font-size: 24px;
   font-weight: 700;
-  color: #6c63ff;
+  color: var(--accent-pink);
 }
 
 .attempt-slash {
   font-size: 16px;
-  color: #555;
+  color: var(--text-secondary);
+  opacity: 0.5;
 }
 
 .attempt-total {
   font-size: 16px;
-  color: #888;
+  color: var(--text-secondary);
 }
 
 .attempt-info {
@@ -106,10 +107,11 @@
 .attempt-pct {
   font-size: 16px;
   font-weight: 600;
-  color: #2ecc71;
+  color: var(--success);
 }
 
 .attempt-date {
   font-size: 12px;
-  color: #666;
+  color: var(--text-secondary);
+  opacity: 0.6;
 }

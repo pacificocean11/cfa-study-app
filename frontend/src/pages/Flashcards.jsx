@@ -58,7 +58,7 @@ export default function Flashcards({ topics }) {
   if (cards.length === 0) {
     return (
       <div className="flashcards">
-        <h1 className="page-title">📇 Flashcards</h1>
+        <h1 className="page-title">Flashcards</h1>
         <div className="filters">
           <select
             className="topic-select"
@@ -85,7 +85,7 @@ export default function Flashcards({ topics }) {
 
   return (
     <div className="flashcards">
-      <h1 className="page-title">📇 Flashcards</h1>
+      <h1 className="page-title">Flashcards</h1>
       <div className="filters">
         <select
           className="topic-select"

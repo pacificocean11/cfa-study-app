@@ -11,20 +11,20 @@
   font-size: 28px;
   font-weight: 700;
   margin-bottom: 24px;
-  color: #fff;
+  color: var(--text-primary);
 }
 
 .section-title {
   font-size: 20px;
   font-weight: 600;
   margin: 32px 0 16px;
-  color: #ccc;
+  color: var(--text-secondary);
 }
 
 .loading {
   text-align: center;
   padding: 60px;
-  color: #888;
+  color: var(--text-secondary);
   font-size: 18px;
 }
 
@@ -36,8 +36,8 @@
 }
 
 .stat-card {
-  background: #1a1a3e;
-  border: 1px solid #2a2a5e;
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
   border-radius: 12px;
   padding: 24px;
   text-align: center;
@@ -51,12 +51,12 @@
 .stat-value {
   font-size: 36px;
   font-weight: 700;
-  color: #fff;
+  color: var(--text-primary);
 }
 
 .stat-label {
   font-size: 14px;
-  color: #888;
+  color: var(--text-secondary);
   margin-top: 4px;
 }
 
@@ -67,7 +67,7 @@
 }
 
 .topic-card {
-  border-left: 4px solid #6c63ff;
+  border-left: 4px solid var(--accent-pink);
 }
 
 .topic-header {
@@ -77,13 +77,13 @@
 .topic-name {
   font-size: 16px;
   font-weight: 600;
-  color: #fff;
+  color: var(--text-primary);
   margin-bottom: 4px;
 }
 
 .topic-counts {
   font-size: 13px;
-  color: #888;
+  color: var(--text-secondary);
 }
 
 .dot {
@@ -96,7 +96,7 @@
 
 .progress-bar {
   height: 6px;
-  background: #2a2a5e;
+  background: var(--border-color);
   border-radius: 3px;
   overflow: hidden;
   margin-bottom: 4px;
@@ -110,5 +110,5 @@
 
 .progress-text {
   font-size: 12px;
-  color: #888;
+  color: var(--text-secondary);
 }

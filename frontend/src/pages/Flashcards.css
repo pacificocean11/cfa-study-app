@@ -10,9 +10,9 @@
 }
 
 .topic-select {
-  background: #1a1a3e;
-  color: #e0e0e0;
-  border: 1px solid #2a2a5e;
+  background: var(--card-bg);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
   border-radius: 8px;
   padding: 10px 16px;
   font-size: 14px;
@@ -22,12 +22,12 @@
 }
 
 .topic-select:focus {
-  border-color: #6c63ff;
+  border-color: var(--accent-pink);
 }
 
 .card-counter {
   font-size: 14px;
-  color: #888;
+  color: var(--text-secondary);
 }
 
 .flashcard-container {
@@ -55,8 +55,8 @@
   width: 100%;
   min-height: 300px;
   backface-visibility: hidden;
-  background: #1a1a3e;
-  border: 1px solid #2a2a5e;
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
   border-radius: 16px;
   padding: 40px;
   display: flex;
@@ -77,14 +77,14 @@
 .card-question {
   font-size: 22px;
   font-weight: 600;
-  color: #fff;
+  color: var(--text-primary);
   text-align: center;
   line-height: 1.4;
 }
 
 .card-answer {
   font-size: 20px;
-  color: #6c63ff;
+  color: var(--accent-pink);
   text-align: center;
   line-height: 1.5;
   font-weight: 500;
@@ -93,7 +93,8 @@
 .flip-hint {
   margin-top: 24px;
   font-size: 13px;
-  color: #555;
+  color: var(--text-secondary);
+  opacity: 0.5;
 }
 
 .confidence-buttons {
@@ -103,7 +104,7 @@
 
 .confidence-label {
   font-size: 14px;
-  color: #888;
+  color: var(--text-secondary);
   margin-bottom: 12px;
 }
 
@@ -122,11 +123,11 @@
   transition: all 0.2s;
 }
 
-.level-1 { background: #e74c3c; color: white; }
-.level-2 { background: #e67e22; color: white; }
-.level-3 { background: #f39c12; color: white; }
-.level-4 { background: #2ecc71; color: white; }
-.level-5 { background: #27ae60; color: white; }
+.level-1 { background: var(--danger); color: white; }
+.level-2 { background: #d97706; color: white; }
+.level-3 { background: var(--accent-yellow); color: white; }
+.level-4 { background: var(--success); color: white; }
+.level-5 { background: #047857; color: white; }
 
 .confidence-btn:hover {
   transform: translateY(-2px);
@@ -136,7 +137,7 @@
 .empty-state {
   text-align: center;
   padding: 60px 20px;
-  color: #888;
+  color: var(--text-secondary);
 }
 
 .empty-state p {

@@ -21,26 +21,26 @@ export default function Progress() {
 
   return (
     <div className="progress-page">
-      <h1 className="page-title">📈 Progress Report</h1>
+      <h1 className="page-title">Progress Report</h1>
 
       <div className="progress-stats">
         <div className="stat-card">
-          <div className="stat-icon">🃏</div>
+          <span className="material-symbols-outlined stat-icon">style</span>
           <div className="stat-value">{overview.reviewedCards}/{overview.totalFlashcards}</div>
           <div className="stat-label">Cards Reviewed</div>
         </div>
         <div className="stat-card">
-          <div className="stat-icon">⭐</div>
+          <span className="material-symbols-outlined stat-icon">stars</span>
           <div className="stat-value">{overview.avgConfidence}</div>
           <div className="stat-label">Avg Confidence (1-5)</div>
         </div>
         <div className="stat-card">
-          <div className="stat-icon">📝</div>
+          <span className="material-symbols-outlined stat-icon">quiz</span>
           <div className="stat-value">{overview.quizStats.attempts}</div>
           <div className="stat-label">Quiz Attempts</div>
         </div>
         <div className="stat-card">
-          <div className="stat-icon">🎯</div>
+          <span className="material-symbols-outlined stat-icon">analytics</span>
           <div className="stat-value">{overview.quizStats.percentage}%</div>
           <div className="stat-label">Overall Accuracy</div>
         </div>

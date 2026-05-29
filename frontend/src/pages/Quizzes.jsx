@@ -72,7 +72,7 @@ export default function Quizzes({ topics }) {
   if (questions.length === 0 && !loading) {
     return (
       <div className="quizzes">
-        <h1 className="page-title">📝 Practice Quizzes</h1>
+        <h1 className="page-title">Practice Quizzes</h1>
         <div className="quiz-setup card">
           <div className="setup-row">
             <label>Topic:</label>
@@ -104,7 +104,7 @@ export default function Quizzes({ topics }) {
     const correct = results.filter(r => r.correct).length;
     return (
       <div className="quizzes">
-        <h1 className="page-title">📝 Quiz Complete!</h1>
+        <h1 className="page-title">Quiz Complete!</h1>
         <div className="quiz-result card">
           <div className="result-score">
             <span className="result-value">{correct}</span>
@@ -120,7 +120,7 @@ export default function Quizzes({ topics }) {
           {results.map((r, i) => (
             <div key={i} className={`result-item ${r.correct ? 'correct' : 'incorrect'}`}>
               <div className="result-item-header">
-                <span className="result-icon">{r.correct ? '✅' : '❌'}</span>
+                <span className="material-symbols-outlined result-icon">{r.correct ? 'check_circle' : 'cancel'}</span>
                 <span className="result-detail-label">Question {i + 1}</span>
               </div>
               <p className="result-explanation">{r.explanation}</p>
@@ -135,7 +135,7 @@ export default function Quizzes({ topics }) {
 
   return (
     <div className="quizzes">
-      <h1 className="page-title">📝 Practice Quiz</h1>
+      <h1 className="page-title">Practice Quiz</h1>
       <div className="quiz-progress">
         <div className="quiz-progress-bar">
           <div className="quiz-progress-fill" style={{ width: `${((currentIndex + 1) / questions.length) * 100}%` }} />
@@ -170,7 +170,7 @@ export default function Quizzes({ topics }) {
           <div className="question-feedback">
             <p className="explanation">{q.explanation}</p>
             <button className="btn btn-primary" onClick={nextQuestion}>
-              {currentIndex < questions.length - 1 ? 'Next Question →' : 'See Results'}
+              {currentIndex < questions.length - 1 ? 'Next Question' : 'See Results'}
             </button>
           </div>
         )}
