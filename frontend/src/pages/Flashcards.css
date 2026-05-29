@@ -22,7 +22,7 @@
 }
 
 .topic-select:focus {
-  border-color: var(--accent-pink);
+  border-color: var(--accent-primary);
 }
 
 .card-counter {
@@ -84,7 +84,7 @@
 
 .card-answer {
   font-size: 20px;
-  color: var(--accent-pink);
+  color: var(--accent-primary);
   text-align: center;
   line-height: 1.5;
   font-weight: 500;
@@ -125,7 +125,7 @@
 
 .level-1 { background: var(--danger); color: white; }
 .level-2 { background: #d97706; color: white; }
-.level-3 { background: var(--accent-yellow); color: white; }
+.level-3 { background: var(--accent-primary); color: white; }
 .level-4 { background: var(--success); color: white; }
 .level-5 { background: #047857; color: white; }
 

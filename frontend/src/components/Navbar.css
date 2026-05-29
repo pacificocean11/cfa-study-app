@@ -5,6 +5,7 @@
   position: sticky;
   top: 0;
   z-index: 100;
+  box-shadow: var(--shadow-sm);
 }
 
 .navbar-inner {
@@ -25,13 +26,13 @@
 
 .brand-icon {
   font-size: 24px;
-  color: var(--accent-pink);
+  color: var(--accent-primary);
 }
 
 .brand-text {
   font-size: 18px;
   font-weight: 700;
-  color: var(--accent-pink);
+  color: var(--accent-primary);
 }
 
 .nav-links {
@@ -52,12 +53,12 @@
 }
 
 .nav-link:hover {
-  background: rgba(190, 0, 85, 0.1);
+  background: rgba(245, 158, 11, 0.1);
   color: var(--text-primary);
 }
 
 .nav-link.active {
-  background: var(--accent-pink);
+  background: var(--accent-primary);
   color: white;
 }
 

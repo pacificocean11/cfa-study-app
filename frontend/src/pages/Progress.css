@@ -83,7 +83,7 @@
 .attempt-correct {
   font-size: 24px;
   font-weight: 700;
-  color: var(--accent-pink);
+  color: var(--accent-graph);
 }
 
 .attempt-slash {

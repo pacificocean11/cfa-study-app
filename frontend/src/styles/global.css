@@ -1,15 +1,16 @@
 :root {
-  --accent-pink: #be0055;
-  --accent-yellow: #f59e0b;
-  --accent-navy: #be0055;
-  --bg-main: #0f172a;
-  --card-bg: #1e293b;
-  --text-primary: #f8fafc;
-  --text-secondary: #94a3b8;
-  --border-color: #334155;
-  --success: #059669;
-  --danger: #ef4444;
-  --warning: #f59e0b;
+  --accent-primary: #F59E0B;
+  --accent-graph: #E11D48;
+  --bg-main: #F7F8FA;
+  --card-bg: #FFFFFF;
+  --text-primary: #1F2937;
+  --text-secondary: #6B7280;
+  --border-color: #E5E7EB;
+  --success: #10B981;
+  --danger: #EF4444;
+  --warning: #F59E0B;
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.06);
+  --shadow-md: 0 4px 12px rgba(0,0,0,0.06);
 }
 
 *, *::before, *::after {
@@ -23,6 +24,11 @@ body {
   background: var(--bg-main);
   color: var(--text-primary);
   min-height: 100vh;
+}
+
+::selection {
+  background: var(--accent-primary);
+  color: white;
 }
 
 .app {
@@ -51,6 +57,7 @@ button {
   border-radius: 12px;
   padding: 20px;
   border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
 }
 
 .btn {
@@ -62,19 +69,20 @@ button {
 }
 
 .btn-primary {
-  background: var(--accent-pink);
+  background: var(--accent-primary);
   color: white;
 }
 .btn-primary:hover {
-  background: #9a0045;
+  background: #D48A0A;
 }
 
 .btn-secondary {
-  background: var(--border-color);
+  background: var(--card-bg);
   color: var(--text-primary);
+  border: 1px solid var(--border-color);
 }
 .btn-secondary:hover {
-  background: #475569;
+  background: #F3F4F6;
 }
 
 .btn-success {
@@ -102,7 +110,7 @@ button {
 }
 
 .tag-easy { background: var(--success); color: #fff; }
-.tag-medium { background: var(--accent-yellow); color: #fff; }
+.tag-medium { background: var(--accent-primary); color: #fff; }
 .tag-hard { background: var(--danger); color: #fff; }
 
 .material-symbols-outlined {

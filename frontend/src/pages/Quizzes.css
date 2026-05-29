@@ -32,7 +32,7 @@
 }
 
 .setup-row select:focus {
-  border-color: var(--accent-pink);
+  border-color: var(--accent-primary);
 }
 
 .start-btn {
@@ -59,7 +59,7 @@
 
 .quiz-progress-fill {
   height: 100%;
-  background: var(--accent-pink);
+  background: var(--accent-graph);
   border-radius: 4px;
   transition: width 0.3s ease;
 }
@@ -109,7 +109,7 @@
 }
 
 .option:hover:not(.disabled) {
-  border-color: var(--accent-pink);
+  border-color: var(--accent-primary);
   background: var(--card-bg);
 }
 
@@ -180,7 +180,7 @@
 }
 
 .result-value {
-  color: var(--accent-pink);
+  color: var(--accent-graph);
 }
 
 .result-total {
